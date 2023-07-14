@@ -14,7 +14,7 @@ public class Addressbook {
         addressbooks[0][5] = "State";
         addressbooks[0][6] = "zip";
         addressbooks[0][7] = "Email";
-        addressbooks[1][0] = "1";
+        addressbooks[1][0] = "123456";
         addressbooks[1][1] = "Seema";
         addressbooks[1][2] = "Verma";
         addressbooks[1][3] = "Panvel";
@@ -25,20 +25,20 @@ public class Addressbook {
         System.out.println("Welcome to my address book!");
         System.out.println("\n");
         System.out.println("n1 - Insert a New Contact \n2 - Search Contact by Last Name \n3 - Delete Contact \n4 - Show All Contacts");
-        System.out.println("\n");
+//        System.out.println("\n");
         System.out.println("\n Choose your option:");
         int option = bc.nextInt();
         if (option == 1) {
-            System.out.println("\n Please enter your first name:");
+            System.out.println("\n Please enter your first name:"+addressbooks[1][0]);
         }
         if (option == 2) {
-            System.out.println("\n Please enter your last name:");
+            System.out.println("\n Please enter your last name:"+addressbooks[1][2]);
         }
         if (option == 3) {
-            System.out.println("\n Please enter your addess:");
+            System.out.println("\n Please enter your addess:"+addressbooks[1][3]);
         }
         if (option == 4) {
-            System.out.println(addressbooks[1][0] + "\t" + addressbooks[1][2] + "," + addressbooks[1][1] + "\n\t" + addressbooks[1][3] + "\n\t" + addressbooks[1][4] + "," + addressbooks[1][5] + " " + addressbooks[1][6] + "\n\t" + addressbooks[1][7]);
+            System.out.println(addressbooks[1][0]+"   "+addressbooks[1][1]+" "+addressbooks[1][2] +" "+ addressbooks[1][3]+" "+addressbooks[1][4]+" "+ addressbooks[1][5]+" "+addressbooks[1][6]+" "+ addressbooks[1][7]);
         }
         if (option==5)
         {
